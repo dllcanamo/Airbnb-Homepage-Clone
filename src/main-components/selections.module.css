@@ -1,0 +1,60 @@
+.mainSelectionsContainer {
+    height: 98px;
+    background-color: aquamarine;
+    /* padding: 0px 80px; */
+    text-align: center;
+    position: sticky;
+    top: 60px;
+    z-index: 0;
+}
+
+.spacer {
+    height: 20px;
+    background-color: bisque;
+}
+
+.selectionsContainer {
+    height: 78px;
+    background-color: blueviolet;
+}
+
+.filterContainer {
+    height: 100%;
+    width: 115px;
+    background-color: red;
+    float: right;
+    position: relative;
+}
+
+.filterButton {
+    width: 91px;
+    height: 48px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0%;
+    border-radius: 8px;
+    /* padding: 0px 7px; */
+    margin: 0px !important;
+    border: 0px;
+}
+
+.filterDiv {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.filterTextImgCont {
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    text-align: center;
+    width: 100%;
+}
+
+
+

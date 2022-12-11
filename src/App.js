@@ -1,7 +1,8 @@
 
 import './App.css';
 import TopNavbar from './main-components/top-navbar';
-import abnbLogo from './assets/svgexport-1.svg';
+import Selections from './main-components/selections';
+// import abnbLogo from './assets/svgexport-1.svg';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       {/* Levi
       <img src={abnbLogo} alt='ABNB-LOGO'></img> */}
       <TopNavbar></TopNavbar>
+      <Selections></Selections>
     </div>
   );
 }

@@ -2,9 +2,10 @@
 
 .mainTopNav {
     height: 80px;
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 .leftContainer {

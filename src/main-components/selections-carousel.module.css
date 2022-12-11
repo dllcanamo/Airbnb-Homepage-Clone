@@ -1,0 +1,6 @@
+.carouselCont {
+    background-color: beige;
+    height: 100%;
+    display: inline-block;
+    width: calc(100% - 115px);
+}
