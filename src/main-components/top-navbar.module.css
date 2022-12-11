@@ -1,0 +1,62 @@
+
+
+.mainTopNav {
+    height: 80px;
+    padding: 0px 80px;
+    position: sticky;
+    top: 0px;
+}
+
+.leftContainer {
+    background-color: blue;
+    width: calc((100%)/3);
+    height: 100%;
+    display: inline-block;
+}
+
+.middleContainer {
+    background-color: purple;
+    width: calc((100%)/3);
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.rightContainer {
+    background-color: yellow;
+    width: calc((100%)/3);
+    height: 100%;
+    display: inline-block;
+}
+
+.logoContainer {
+    height: 100%;
+    width: 105px;
+    display: inline-block;
+    position: relative;
+    /* background-color: green; */
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.addWidgetContainer {
+    height: 48px;
+    width: 100%;
+    background-color: red;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.addWidget {
+    height: 100%;
+    width: calc(100%-48px);
+    margin: 0px 24px;
+    background-color: green;
+    border-radius: 25px;
+}

@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+/* just a place holder */
+.HomePage {
+  height: 2000px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
