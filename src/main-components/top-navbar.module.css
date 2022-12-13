@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 
 .mainTopNav {
@@ -6,28 +7,33 @@
     position: sticky;
     top: 0px;
     z-index: 1;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 0px 80px;
 }
 
 .leftContainer {
-    background-color: blue;
+    /* background-color: blue; */
     width: calc((100%)/3);
     height: 100%;
     display: inline-block;
 }
 
 .middleContainer {
-    background-color: purple;
+    /* background-color: purple; */
     width: calc((100%)/3);
     height: 100%;
     display: inline-block;
     position: relative;
+    z-index: 1;
+
 }
 
 .rightContainer {
-    background-color: yellow;
+    /* background-color: yellow; */
     width: calc((100%)/3);
     height: 100%;
     display: inline-block;
+    position: relative;
 }
 
 .logoContainer {
@@ -47,7 +53,7 @@
 .addWidgetContainer {
     height: 48px;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     vertical-align: middle;
     position: absolute;
     top: 50%;
@@ -55,9 +61,103 @@
 }
 
 .addWidget {
-    height: 100%;
-    width: calc(100%-48px);
-    margin: 0px 24px;
-    background-color: green;
+    height: 46px;
+    /* width: calc(100%-48px); */
+    width: 350px;
+    /* margin: 0px 24px; */
+    margin: auto;
+    /* background-color: green; */
     border-radius: 25px;
+    border: 1px solid #DDDDDD;
 }
+
+.miscContainer {
+    /* background-color: aquamarine; */
+    /* width: 50px; */
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    height: 42px;
+}
+
+.accountContainer {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 5px 5px 12px;
+    border-radius: 21px;
+    margin: 0 2px;
+    background-color: white;
+    position: relative;
+    border: 1px solid #DDDDDD;
+}
+
+.burgerIcon {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+}
+
+.userIcon {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.settings {    
+    display: inline-block;
+    width: 46px;
+    height: 42px;
+    border-radius: 21px;
+    margin: 0 2px;
+    background-color: white;
+    position: relative;
+}
+
+.globeLogo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.bnbHome {    
+    display: inline-block;
+    width: 150px;
+    height: 42px;
+    background-color: white;
+    border-radius: 21px;
+    margin: 0 2px;
+    text-align: center;
+    position: relative;
+}
+
+.bnbHomeTextCont {
+    height: 18px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.bnbHomeText {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    position: relative;
+    bottom: 4px;
+}
+

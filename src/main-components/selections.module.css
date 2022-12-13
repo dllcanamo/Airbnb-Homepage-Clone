@@ -1,27 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+
 .mainSelectionsContainer {
     height: 98px;
-    background-color: aquamarine;
     /* padding: 0px 80px; */
     text-align: center;
     position: sticky;
     top: 60px;
     z-index: 0;
+    padding: 0px 80px;
 }
 
 .spacer {
     height: 20px;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 .selectionsContainer {
     height: 78px;
-    background-color: blueviolet;
 }
 
 .filterContainer {
     height: 100%;
-    width: 115px;
-    background-color: red;
+    width: 100px;
+    /* background-color: red; */
     float: right;
     position: relative;
 }
@@ -29,7 +31,7 @@
 .filterButton {
     width: 91px;
     height: 48px;
-    /* background-color: blue; */
+    background-color: white;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -37,7 +39,7 @@
     border-radius: 8px;
     /* padding: 0px 7px; */
     margin: 0px !important;
-    border: 0px;
+    border: 1px solid #DDDDDD;
 }
 
 .filterDiv {
@@ -47,13 +49,35 @@
 }
 
 .filterTextImgCont {
-    height: 16px;
+    height: 18px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: red;
+    /* background-color: red; */
     text-align: center;
     width: 100%;
+}
+
+.logoCont {
+    height: 16px;
+    width: 16px;
+    /* background-color: antiquewhite; */
+    margin-top: 2px;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.filterIcon {
+    height: 14px;
+    width: 14px;
+}
+
+.filterText {
+    position: relative;
+    top: -3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 
