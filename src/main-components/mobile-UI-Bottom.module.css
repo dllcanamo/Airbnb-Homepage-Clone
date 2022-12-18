@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+.mobileUIBottom {
+    height: 64px;
+    /* background-color: red; */
+    position: absolute;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #DDDDDD;;
+}
+
+.bottomContentCont {
+    max-width: 560px;
+    /* background-color: green; */
+    height: 44px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.explore, .wishlist, .login {
+    height: 44px;
+    width: calc(100% / 5);
+    display: flex;
+    /* background-color: aliceblue; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomIconContainer {
+    height: 30px;
+    width: 30px;
+    /* background-color: aqua; */
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.bottomTextCont {
+    width: 100%;
+    height: 12px;
+    /* background-color: aquamarine; */
+}
+
+.bottomText {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: -8px;
+}
+
+.botIcon {
+    height: 100%;
+    width: 100%;
+}

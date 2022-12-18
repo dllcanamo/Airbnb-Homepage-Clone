@@ -21,6 +21,8 @@
     width: 76px;
     /* background-color: green; */
     z-index: 10;
+
+    display: none;
 }
 
 .nextCont {
@@ -86,8 +88,17 @@
     height: 48px;
     margin: 0px 15px;
     margin-top: 12px;
-    padding: 4px 0px 14px;
+    padding: 4px 0px 12px;
     min-width: 56px;
+}
+
+.firstElement {
+    margin-left: 0px;
+    border-bottom: 2px solid black;
+}
+
+.lastElement {
+    margin-right: 0px;
 }
 
 .catLogoCont {
@@ -109,4 +120,19 @@
     z-index: 0;
     top: 3px;
 }
+
+@media screen and (max-width: 749.95px) {
+    .carouselCont {
+        width: calc(100%);
+    }
+
+    .categoryContainer {
+        height: 44px;
+    }
+
+    .catText {
+        top: 0px;
+    }
+
+  }
 

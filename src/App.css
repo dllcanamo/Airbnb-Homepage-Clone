@@ -8,6 +8,10 @@
   /* padding: 0px 80px; */
 }
 
+.MUIBCONT {
+  display: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -40,5 +44,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 749.95px) {
+  .MUIBCONT {
+    display: block;
   }
 }

@@ -10,7 +10,13 @@ let categories = [
     'Cabins',
     'Trending',
     'Top of the world',
-    'Bed & breakfast'
+    'Bed & breakfast',
+    'Treehouses',
+    'Mansions',
+    'Houseboats',
+    'New',
+    'Lake',
+    'Islands'
 ];
 
 export default categories

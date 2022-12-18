@@ -8,7 +8,9 @@
   text-align: center;
 }
 
-.widgetText, .guestText {
+.whereText,
+.weekText,
+.guestText {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -32,34 +34,105 @@
 }
 
 .widgetSpacer {
-    flex: 0 0 1px;
-    height: 24px;
-    width: 1px;
-    background-color: #DDDDDD;
-    display: inline-block;
-    position: relative;
-    top: 7.6px;
+  flex: 0 0 1px;
+  height: 24px;
+  width: 1px;
+  background-color: #dddddd;
+  display: inline-block;
+  position: relative;
+  top: 7.6px;
+}
+
+.widgetSpacerInner {
+  background-color: none;
+  flex: 0 0 1px;
+  height: 24px;
+  width: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: inline-block;
 }
 
 .guestText {
-    margin-right: 41px;
+  margin-right: 41px;
 }
 
 .magnifyCont {
-    display: inline-block;
-    background-color: #FF385C;
-    height: 30px;
-    width: 32px;
-    position: absolute;
-    top: 8px;
-    right: 7px;
-    border-radius: 50%;
-    text-align: center;
+  display: inline-block;
+  background-color: #ff385c;
+  height: 30px;
+  width: 32px;
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .magnifyIcon {
-    height: 13px;
-    width: 13px;
-    position: relative;
-    top: 4px;
+  height: 13px;
+  width: 13px;
+  position: relative;
+  top: 4px;
+}
+
+@media screen and (max-width: 813.95px) {
+  .whereText,
+  .weekText,
+  .guestText {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0px 13px;
+  }
+
+  .whereText {
+    /* width: 67.05px; */
+    /* width: calc(27.933% + 32px) !important; */
+    width: calc(100% - 26px);
+  }
+
+  .weekText {
+    /* width: 64.42px; */
+    /* width: calc(27.374% + 32px) !important; */
+    width: calc(100% - 26px);
+  }
+
+  .guestText {
+    width: calc(100% - 41px - 26px);
+  }
+
+  .widgetSpacer {
+    /* width: calc(30.16760%); */
+    z-index: 5;
+    background-color: transparent !important;
+  }
+
+  .widgetSpacerInner {
+    /* flex: 0 0 1px;
+    height: 24px;
+    width: 1px; */
+    height: 100%;
+    width: 100%;
+    background-color: #dddddd;
+    display: inline-block;
+    position: absolute;
+    top: -6.4px;
+    z-index: 5;
+  }
+
+  .anywhereCont {
+    width: calc(27.933%) !important;
+  }
+
+  .anyweekCont {
+    width: calc(27.374%) !important;
+  }
+
+  .addCont {
+    width: calc((100% - 27.933% - 27.374%) - 10px) !important;
+  }
 }

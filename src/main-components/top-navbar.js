@@ -1,16 +1,19 @@
 import classes from "./top-navbar.module.css";
 import abnbLogo from "../assets/svgexport-1.svg";
+import abnbLogoSmall from "../assets/svgexport-2.svg";
 import globeLogo from '../assets/svgexport-5.svg';
 import burger from '../assets/svgexport-6.svg';
 import userIcon from '../assets/svgexport-7.svg';
 import WidgetContent from "./widget-content";
+import MobileUITop from "./mobile-UI-Top";
 
 function TopNavbar() {
   return (
     <div className={classes.mainTopNav}>
       <div className={classes.leftContainer}>
         <div className={classes.logoContainer}>
-          <img className={classes.logo} src={abnbLogo} alt="ABNB-LOGO"></img>
+          <img className={classes.logo} src={abnbLogo} alt="abnb-logo"></img>
+          <img className={classes.logoSmall} src={abnbLogoSmall} alt="abnb-logo-small"></img>
         </div>
       </div>
       <div className={classes.middleContainer}>
@@ -36,6 +39,9 @@ function TopNavbar() {
             </div>
 
         </div>
+      </div>
+      <div className={classes.mobileUITopContainer}>
+        <MobileUITop></MobileUITop>
       </div>
     </div>
   );

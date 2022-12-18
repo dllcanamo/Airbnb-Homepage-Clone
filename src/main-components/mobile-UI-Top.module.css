@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+.mobileUITop {
+    height: calc(100% - 2px);
+    width: 100%;
+    /* background-color: red; */
+    border-radius: 50px;
+    position: relative;
+    border: 1px solid #DDDDDD;
+    min-width: 295px;
+}
+
+.mobileLeftIcon {
+    display: inline-block;
+    width: 52px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: aliceblue; */
+    text-align: center;
+}
+
+.leftIconCont {
+    display: inline-block;
+    background-color: aqua;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 1px;
+}
+
+.leftIcon {
+    height: 100%;
+    width: 100%;
+}
+
+.mobileBtn {
+    display: inline-block;
+    width: calc(100% - 56px - 52px);
+    /* background-color: aqua; */
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 52px;
+}
+
+.whereTo {
+    height: 20px;
+    /* background-color: red; */
+}
+
+.whereToText {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 1px;
+    position: relative;
+    top: -3px;
+}
+
+.aaa {
+    height: 16px;
+    /* background-color: green; */
+}
+
+.aaa1Text, .aaa2Text, .aaa3Text {
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 1px;
+    position: relative;
+    top: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.aaa {
+    display: flex;
+}
+
+.aaa1 {
+    display: flex;
+    height: 16px;
+    min-width: 20px;
+}
+
+/* .onecont {
+
+} */
+
+.circle {
+    width: 13px;
+    display: inline-block;
+    height: 16px;
+    text-align: center;
+    position: relative;
+    top: -5px;
+    /* vertical-align: middle; */
+}
+
+.mobileRightIcon {
+    display: inline-block;
+    width: 56px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    /* background-color: red; */
+}
+
+.rightIconCont {
+    height: 36px;
+    width: 36px;
+    /* background-color: aquamarine; */
+    margin: auto;
+    position: relative;
+    top: 8px;
+    border-radius: 50%;
+    border: 1px solid #DDDDDD;
+}
+
+.rightIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+@media screen and (max-width: 374.95px) {
+
+    
+}
+
+
+
+

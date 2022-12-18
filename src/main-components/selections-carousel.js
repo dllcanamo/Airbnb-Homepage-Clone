@@ -10,7 +10,11 @@ function SelectionsCarousel() {
       <div className={classes.prevCont}>
         <div className={classes.prevBtnCont}>
           <div className={classes.prevBtn}>
-            <img className={classes.icons} src={prevButton} alt="prev-btn"></img>
+            <img
+              className={classes.icons}
+              src={prevButton}
+              alt="prev-btn"
+            ></img>
           </div>
         </div>
         <div className={classes.lspacer}></div>
@@ -19,14 +23,19 @@ function SelectionsCarousel() {
         <div className={classes.rspacer}></div>
         <div className={classes.nextBtnCont}>
           <div className={classes.nextBtn}>
-            <img className={classes.icons} src={nextButton} alt="next-btn"></img>
+            <img
+              className={classes.icons}
+              src={nextButton}
+              alt="next-btn"
+            ></img>
           </div>
         </div>
       </div>
       {/* <div className={classes.categoryRow}> */}
-        {categories.map((elem) => {
+      {categories.map((elem, index) => {
+        if (index === 0) {
           return (
-            <div className={classes.categoryContainer}>
+            <div className={`${classes.categoryContainer}  ${classes.firstElement}`}>
               <div className={classes.catLogoCont}>
                 <img
                   className={classes.catLogo}
@@ -37,7 +46,36 @@ function SelectionsCarousel() {
               <span className={classes.catText}>{elem}</span>
             </div>
           );
-        })}
+        }
+
+        if (index === categories.length-1) {
+          return (
+            <div className={`${classes.categoryContainer}  ${classes.lastElement}`}>
+              <div className={classes.catLogoCont}>
+                <img
+                  className={classes.catLogo}
+                  src={catSampleLogo}
+                  alt="cat-sample-logo"
+                ></img>
+              </div>
+              <span className={classes.catText}>{elem}</span>
+            </div>
+          );
+        }
+
+        return (
+          <div className={classes.categoryContainer}>
+            <div className={classes.catLogoCont}>
+              <img
+                className={classes.catLogo}
+                src={catSampleLogo}
+                alt="cat-sample-logo"
+              ></img>
+            </div>
+            <span className={classes.catText}>{elem}</span>
+          </div>
+        );
+      })}
       {/* </div> */}
     </div>
   );

@@ -11,6 +11,12 @@
     padding: 0px 80px;
 }
 
+.mobileUITopContainer {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
 .leftContainer {
     /* background-color: blue; */
     width: calc((100%)/3);
@@ -44,7 +50,7 @@
     /* background-color: green; */
 }
 
-.logo {
+.logo, .logoSmall {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -161,3 +167,91 @@
     bottom: 4px;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 1439.95px) {
+    .mainTopNav {
+        padding: 0px 40px;
+    }
+
+    .leftContainer, .rightContainer {
+        width: calc((100% - 400px)/2);
+    }
+
+    .middleContainer {
+        width: 400px;
+    }
+
+    .logoSmall {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1127.95px) {
+    .logoSmall {
+        display: inline-block;
+    }
+
+    .logo {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1070.95px) {
+    .leftContainer, .rightContainer {
+        width: calc((100% - 400px - 287px));
+    }
+
+    .rightContainer {
+        width: 287px;
+    }
+}
+
+@media screen and (max-width: 949.95px) {
+    .middleContainer {
+        width: 400px;
+    }
+
+    .leftContainer {
+        width: 30px;
+    }
+
+    .rightContainer {
+        width: calc((100% - 400px - 30px));
+    }
+}
+
+@media screen and (max-width: 813.95px) {
+    .middleContainer {
+        max-width: calc((100% - 287px - 30px));
+        text-align: left;
+    }
+
+    .addWidget {
+        max-width: 356px;
+        width: calc(100% - 42px);
+    }
+
+    .leftContainer {
+        width: 30px;
+    }
+
+    .rightContainer {
+        width: 287px;
+    }
+}
+
+@media screen and (max-width: 749.95px) {
+    .mainTopNav {
+        padding: 14px 24px 0px;
+        height: 56px;
+        border-bottom: none;
+    }
+
+    .leftContainer, .middleContainer, .rightContainer {
+        display: none;
+    }
+
+    .mobileUITopContainer {
+        display: block;
+    }
+}
