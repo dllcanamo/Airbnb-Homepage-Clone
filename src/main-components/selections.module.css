@@ -6,7 +6,7 @@
   text-align: center;
   position: sticky;
   top: 60px;
-  z-index: 0;
+  z-index: 10;
   padding: 0px 80px;
   background-color: white;
   /* background-color: red; */

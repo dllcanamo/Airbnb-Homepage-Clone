@@ -1,128 +1,231 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
 .card {
-    /* height: 150px; */
-    width: calc((100% - 96px)/5);
-    /* display: flex; */
-    /* border: 1px solid black; */
-    aspect-ratio: 1/1.3;
-    /* background-color: red; */
+  /* height: 150px; */
+  width: calc((100% - 96px) / 5);
+  /* display: flex; */
+  /* border: 1px solid black; */
+  aspect-ratio: 1/1.3;
+  /* background-color: red; */
 }
 
 .imgCont {
-    width: 100%;
-    height: calc(100% - 98px);
-    margin-bottom: 10px;
-    background-color: lightblue;
+  width: 100%;
+  height: calc(100% - 100px);
+  margin-bottom: 12px;
+  background-color: lightblue;
+  border-radius: 10px;
+  position: relative;
+}
+
+.imageBlock {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.sampleHome {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imgWidgetCont {
+  width: calc(100% - 24px);
+  height: calc(100% - 12px);
+  position: relative;
+  margin: 0px 12px;
+  bottom: -12px;
+  /* background-color: lightcoral; */
+}
+
+.heartCont,
+.nextPrevCont,
+.circlesCont {
+  height: calc(100% / 3);
+  width: 100%;
+}
+
+.nextPrevCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circlesCont {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.heartBtn {
+  height: 32px;
+  width: 32px;
+  float: right;
+  /* background-color: lightgoldenrodyellow; */
+}
+
+.nextBtn,
+.prevBtn {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 0.5px solid rgb(0 0 0 / 0.3);
+  background-color: white;
+  position: relative;
+}
+
+.nextIcon,
+.prevIcon {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.nextBtn {
+  float: right;
+}
+
+.prevBtn {
+  float: left;
+}
+
+.circlesBlock {
+  height: 18px;
+  width: 55px;
+  /* background-color: beige; */
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.circleActive,
+.circle {
+  height: 6px;
+  width: 6px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 50%;
 }
 
 .detailCont {
-    width: 100%;
-    height: 88px;
-    /* background-color: antiquewhite; */
+  width: 100%;
+  height: 88px;
+  /* background-color: antiquewhite; */
 }
 
-.locationRating, .distance, .dates, .price {
-    width: 100%;
-    height: 20px;
-    display: flex;
-    /* background-color: aqua; */
+.locationRating,
+.distance,
+.dates,
+.price {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  /* background-color: aqua; */
 }
 
 .location {
-    height: 100%;
-    /* background-color: lightgray; */
-    margin-right: 8px;
-    flex-grow: 1;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 20px;
+  height: 100%;
+  /* background-color: lightgray; */
+  margin-right: 8px;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
 }
 
 .rating {
-    display: inline-block;
-    /* width: 38px; */
-    height: 100%;
-    margin-left: 8px;
-    /* background-color: lightcoral; */
-    position: relative;
-    /* float: right; */
-    margin-left: auto;
-    order: 2;
+  display: inline-block;
+  /* width: 38px; */
+  height: 100%;
+  margin-left: 8px;
+  /* background-color: lightcoral; */
+  position: relative;
+  /* float: right; */
+  margin-left: auto;
+  order: 2;
 }
 
 .ratingText {
-    margin-left: 17px;
+  margin-left: 17px;
 }
 
 .starIcon {
-    height: 12px;
-    position: absolute;
-    top: 3px;
+  height: 12px;
+  position: absolute;
+  top: 3px;
 }
 
-.distance, .dates {
-    flex-grow: 1;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    line-height: 20px;
+.distance,
+.dates {
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .price {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .priceText {
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    position: relative;
-    top: -0px;
-    margin-right: 2px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: -0px;
+  margin-right: 2px;
 }
 
-.nightText, .ratingText {
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    position: relative;
-    top: 0px;
+.nightText,
+.ratingText {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  position: relative;
+  top: 0px;
 }
 
 .ratingText {
-    top: -2px;
+  top: -2px;
 }
 
-
 @media screen and (max-width: 1639.95px) {
-    .card {
-        width: calc((100% - 72px)/4);
-    }
+  .card {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 @media screen and (max-width: 1127.95px) {
-    .card {
-        width: calc((100% - 48px)/3);
-    }
+  .card {
+    width: calc((100% - 48px) / 3);
+  }
 }
 
 @media screen and (max-width: 949.95px) {
-    .card {
-        aspect-ratio: 1/1.3;
-        width: calc((100% - 24px)/2);
-    }
+  .card {
+    aspect-ratio: 1/1.3;
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (max-width: 549.95px) {
-    .card {
-        width: calc(100%);
-    }
+  .card {
+    width: calc(100%);
+  }
 }

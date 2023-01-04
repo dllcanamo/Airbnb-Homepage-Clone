@@ -1,10 +1,42 @@
 import classes from "./card.module.css";
 import starIcon from '../assets/svgexport-13.svg';
+import heartIcon from '../assets/svgexport-14.svg';
+import prevIcon from '../assets/svgexport-15.svg';
+import nextIcon from '../assets/svgexport-16.svg';
+import sampleHome from '../assets/sample.webp'
 
 function Card() {
   return (
     <div className={classes.card}>
-      <div className={classes.imgCont}></div>
+      <div className={classes.imgCont}>
+        <div className={classes.imageBlock}>
+          <img className={classes.sampleHome} src={sampleHome} alt='sample'></img>
+        </div>
+        <div className={classes.imgWidgetCont}>
+          <div className={classes.heartCont}>
+            <div className={classes.heartBtn}>
+              <img className={classes.heartIcon} src={heartIcon} alt='heart-icon'></img>
+            </div>
+          </div>
+          <div className={classes.nextPrevCont}>
+            <div className={classes.prevBtn}>
+            <img className={classes.prevIcon} src={prevIcon} alt='prev-icon'></img>
+            </div>
+            <div className={classes.nextBtn}>
+            <img className={classes.nextIcon} src={nextIcon} alt='next-icon'></img>
+            </div>
+            </div>
+            <div className={classes.circlesCont}>
+              <div className={classes.circlesBlock}>
+                <div className={classes.circleActive}></div>
+                <div className={classes.circle}></div>
+                <div className={classes.circle}></div>
+                <div className={classes.circle}></div>
+                <div className={classes.circle}></div>
+              </div>
+            </div>
+        </div>
+      </div>
       <div className={classes.detailCont}>
         <div className={classes.locationRating}>
           <div className={classes.location}>
