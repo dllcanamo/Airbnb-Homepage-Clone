@@ -76,6 +76,7 @@
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
+    color: #717171;
 }
 
 .aaa {
@@ -99,6 +100,7 @@
     text-align: center;
     position: relative;
     top: -5px;
+    color: #717171;
     /* vertical-align: middle; */
 }
 

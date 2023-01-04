@@ -77,6 +77,11 @@
   border: 0.5px solid rgb(0 0 0 / 0.3);
   background-color: white;
   position: relative;
+  opacity: 0.85;
+}
+
+.prevBtn {
+  visibility: hidden;
 }
 
 .nextIcon,
@@ -177,6 +182,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 20px;
+  color: #717171;
 }
 
 .price {

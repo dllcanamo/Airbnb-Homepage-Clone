@@ -3,6 +3,7 @@ import categories from "../constants/categories";
 import prevButton from "../assets/svgexport-8.svg";
 import nextButton from "../assets/svgexport-9.svg";
 import catSampleLogo from "../assets/cat-sample-logo.jpg";
+import catSampleLogoGrey from "../assets/cat-sample-logo-grey.jpg";
 
 function SelectionsCarousel() {
   return (
@@ -53,26 +54,36 @@ function SelectionsCarousel() {
             <div className={`${classes.categoryContainer}  ${classes.lastElement}`}>
               <div className={classes.catLogoCont}>
                 <img
-                  className={classes.catLogo}
+                  className={`${classes.catLogo}  ${classes.initialIcon}`}
+                  src={catSampleLogoGrey}
+                  alt="cat-sample-logo"
+                ></img>
+                <img
+                  className={`${classes.catLogo}  ${classes.hoveredIcon}`}
                   src={catSampleLogo}
                   alt="cat-sample-logo"
                 ></img>
               </div>
-              <span className={classes.catText}>{elem}</span>
+              <span className={`${classes.catText}  ${classes.nonActiveText}`}>{elem}</span>
             </div>
           );
         }
 
         return (
-          <div className={classes.categoryContainer}>
+          <div className={`${classes.categoryContainer}  ${classes.middleElement}`}>
             <div className={classes.catLogoCont}>
               <img
-                className={classes.catLogo}
+                className={`${classes.catLogo}  ${classes.initialIcon}`}
+                src={catSampleLogoGrey}
+                alt="cat-sample-logo"
+              ></img>
+              <img
+                className={`${classes.catLogo}  ${classes.hoveredIcon}`}
                 src={catSampleLogo}
                 alt="cat-sample-logo"
               ></img>
             </div>
-            <span className={classes.catText}>{elem}</span>
+            <span className={`${classes.catText}  ${classes.nonActiveText}`}>{elem}</span>
           </div>
         );
       })}

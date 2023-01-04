@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
 .anywhereCont {
   display: inline-block;
@@ -16,6 +16,11 @@
   font-size: 13px;
   padding: 0px 16px;
   line-height: 46px;
+}
+
+.whereText,
+.weekText {
+  font-weight: 600;
 }
 
 .anyweekCont {
@@ -57,6 +62,7 @@
 
 .guestText {
   margin-right: 41px;
+  color: #717171;
 }
 
 .magnifyCont {
