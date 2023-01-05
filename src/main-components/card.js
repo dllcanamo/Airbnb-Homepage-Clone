@@ -29,10 +29,10 @@ function Card() {
             <div className={classes.circlesCont}>
               <div className={classes.circlesBlock}>
                 <div className={classes.circleActive}></div>
-                <div className={classes.circle}></div>
-                <div className={classes.circle}></div>
-                <div className={classes.circle}></div>
-                <div className={classes.circle}></div>
+                <div className={classes.circle1}></div>
+                <div className={classes.circle2}></div>
+                <div className={classes.circle3}></div>
+                <div className={classes.circle4}></div>
               </div>
             </div>
         </div>

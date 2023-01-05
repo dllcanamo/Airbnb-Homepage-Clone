@@ -51,6 +51,10 @@
     /* background-color: green; */
 }
 
+.logoContainer:hover {
+    cursor: pointer;
+}
+
 .logo, .logoSmall {
     position: absolute;
     top: 50%;
@@ -76,6 +80,16 @@
     /* background-color: green; */
     border-radius: 25px;
     border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s ease-in-out;
+    -o-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.addWidget:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
 }
 
 .miscContainer {
@@ -99,6 +113,15 @@
     background-color: white;
     position: relative;
     border: 1px solid #DDDDDD;
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s ease-in-out;
+    -o-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.accountContainer:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
 }
 
 .burgerIcon {
@@ -127,6 +150,11 @@
     position: relative;
 }
 
+.settings:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
 .globeLogo {
     position: absolute;
     top: 50%;
@@ -146,6 +174,11 @@
     margin: 0 2px;
     text-align: center;
     position: relative;
+}
+
+.bnbHome:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
 }
 
 .bnbHomeTextCont {

@@ -73,8 +73,20 @@
 }
 
 .nextBtn {
+    /* transform: scale(1.04); */
     right: 0%;
     margin-right: 5px;
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s ease-in-out;
+    -o-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.nextBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    transform: scale(1.04);
+    top: 30.5%;
 }
 
 .icons {
@@ -100,6 +112,10 @@
 .firstElement {
     margin-left: 0px;
     border-bottom: 2px solid black;
+}
+
+.firstElement:hover {
+    cursor: default !important;
 }
 
 /* trying out values and styles */

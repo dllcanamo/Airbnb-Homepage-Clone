@@ -45,6 +45,10 @@
   border: 1px solid #dddddd;
 }
 
+.filterButton:hover {
+  cursor: pointer;
+}
+
 .filterDiv {
   height: 100%;
   width: 100%;

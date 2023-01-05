@@ -9,6 +9,14 @@
   /* background-color: red; */
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .nextBtn {
+  opacity: 0.85;
+}
+
 .imgCont {
   width: 100%;
   height: calc(100% - 100px);
@@ -62,10 +70,15 @@
 }
 
 .heartBtn {
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
   float: right;
   /* background-color: lightgoldenrodyellow; */
+}
+
+.heartIcon {
+  height: 24px;
+  width: 24px;
 }
 
 .nextBtn,
@@ -77,7 +90,11 @@
   border: 0.5px solid rgb(0 0 0 / 0.3);
   background-color: white;
   position: relative;
-  opacity: 0.85;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .prevBtn {
@@ -112,12 +129,24 @@
 }
 
 .circleActive,
-.circle {
+.circle1, .circle2, .circle3, .circle4 {
   height: 6px;
   width: 6px;
   background-color: white;
   display: inline-block;
   border-radius: 50%;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+  opacity: 0.5;
+}
+
+.circle2 {
+  transform: scale(0.83333);
+}
+
+.circle3, .circle4 {
+  transform: scale(0.66667);
 }
 
 .detailCont {
