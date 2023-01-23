@@ -19,7 +19,7 @@
 
 .selectionsContainer {
   height: 78px;
-
+  position: relative;
   /* height: 74px; */
 }
 
@@ -108,15 +108,81 @@
   .mainSelectionsContainer {
     top: 70px;
     height: 74px;
+    box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
   }
 
   .selectionsContainer {
     /* height: 78px; */
-
     height: 74px;
   }
 
   .filterContainer {
     display: none;
   }
+}
+
+
+
+/* recent additions due to transfer of elements */
+.prevBtn, .nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 28px;
+  width: 28px;
+  /* background-color: red; */
+  border-radius: 50%;
+  border: 0.5px solid rgb(0 0 0 / 0.3);
+  background-color: white;
+  z-index: 100;
+
+  /* to compensate for the movement due to transform scale */
+  top: 30.5%;
+  transform: scale(1);
+}
+
+.prevBtn {
+  margin-left: 5px;
+  /* display none while page has no behavior */
+  display: none;
+}
+
+.nextBtn {
+  /* transform: scale(1.04); */
+  right: 100px;
+  margin-right: 5px;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+
+  /* to compensate for the movement due to transform scale */
+  /* important to give a transform scale value before hover so 
+  that it wont move around when hovered */
+  top: 30.5%;
+  transform: scale(1);
+}
+
+.nextBtn:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transform: scale(1.04);
+  /* top: 30.5%; */
+  transform-origin: center center;
+}
+
+.icons {
+  margin-top: 8px;
+  height: 12px;
+  width: 12px;
+}
+
+@media screen and (max-width: 749.95px) {
+  .nextBtn {
+    right: 0;
+  }
+
+  .nextBtn:hover {
+    transform: scale(1.04);
+}
 }

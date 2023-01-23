@@ -7,7 +7,13 @@
     border-radius: 50px;
     position: relative;
     border: 1px solid #DDDDDD;
+    border-bottom: none;
     min-width: 295px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+}
+
+.mobileUITop:hover {
+    cursor: pointer;
 }
 
 .mobileLeftIcon {

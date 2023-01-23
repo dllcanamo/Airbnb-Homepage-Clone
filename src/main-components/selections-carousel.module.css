@@ -14,6 +14,7 @@
 
 .prevCont, .nextCont {
     position: absolute;
+    pointer-events: none;
 }
 
 .prevCont {
@@ -21,7 +22,7 @@
     width: 76px;
     /* background-color: green; */
     z-index: 10;
-
+    /* display none while page has no behavior */
     display: none;
 }
 
@@ -47,6 +48,8 @@
 .rspacer {
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(255,255,255,1));
 }
+/* styles below are not used %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* elements affected are moved to parent level %%%%%%%%%%%%%%%%%%%%%%%% */
 
 .prevBtnCont, .nextBtnCont{
     width: 36px;
@@ -94,6 +97,7 @@
     height: 12px;
     width: 12px;
 }
+/* until here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 .categoryContainer {
     display: inline-block;

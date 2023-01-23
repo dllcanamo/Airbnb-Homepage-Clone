@@ -10,26 +10,26 @@ function SelectionsCarousel() {
     <div className={classes.carouselCont}>
       <div className={classes.prevCont}>
         <div className={classes.prevBtnCont}>
-          <div className={classes.prevBtn}>
+          {/* <div className={classes.prevBtn}>
             <img
               className={classes.icons}
               src={prevButton}
               alt="prev-btn"
             ></img>
-          </div>
+          </div> */}
         </div>
         <div className={classes.lspacer}></div>
       </div>
       <div className={classes.nextCont}>
         <div className={classes.rspacer}></div>
         <div className={classes.nextBtnCont}>
-          <div className={classes.nextBtn}>
+          {/* <div className={classes.nextBtn}>
             <img
               className={classes.icons}
               src={nextButton}
               alt="next-btn"
             ></img>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className={classes.categoryRow}> */}
